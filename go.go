@@ -104,7 +104,7 @@ func GoCrossCompile(opts *CompileOpts) error {
 		opts.PackagePath = ""
 	}
 
-	args := []string{"build"}
+	args := []string{"build -s -w"}
 	if opts.Rebuild {
 		args = append(args, "-a")
 	}
